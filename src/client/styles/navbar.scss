@@ -1,0 +1,28 @@
+nav {
+    background-color: #535a3b;
+    padding: 10px;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            display: inline;
+
+            a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                display: inline-block;
+
+                &:hover {
+                    background-color: #cedcc3;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
