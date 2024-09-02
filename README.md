@@ -13,6 +13,8 @@ The Travel App is a web application designed to help users plan their travel iti
 ## Technologies Used
 
 - **Node.js**: JavaScript runtime built on Chrome's V8 JavaScript engine.
+               My node version: v20.11.1
+
 - **Express**: Fast, unopinionated, minimalist web framework for Node.js.
 - **SCSS**: Sassy CSS for better styling and organization.
 
