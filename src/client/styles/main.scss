@@ -1,34 +1,91 @@
 #app {
-    max-width: 650px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
 
-    h1 {
-        text-align: center;
-    }
+#app h1 {
+  text-align: center;
+}
 
-    label {
-        display: block;
-        margin: 10px 0 5px;
-    }
+#app label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 1em;
+}
 
-    input {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 20px;
-        box-sizing: border-box;
-    }
+#app input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
 
-    #button {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        background-color: #535a3b;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+#app #button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #535a3b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #app {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  #app h1 {
+    font-size: 1.5em;
+  }
+
+  #app label {
+    font-size: 0.9em; 
+  }
+
+  #app input {
+    padding: 10px;
+  }
+
+  #app #button {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  #app {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  #app h1 {
+    font-size: 1.2em;
+  }
+
+  #app label {
+    font-size: 0.8em; 
+    margin: 8px 0 4px; 
+  }
+
+  #app input {
+    padding: 12px;
+  }
+
+  #app #button {
+    padding: 15px;
+  }
+}
+
+.trip-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
 }

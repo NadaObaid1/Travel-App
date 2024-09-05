@@ -1,14 +1,20 @@
 const request = require('supertest');
-const server = require('../server/server.js'); 
+const app = require('../server/server.js');  
 
-describe('GET /', () => {
-    afterAll(() => {
-        server.close(); 
-    });
+describe('Server Tests', () => {
+  let server;
 
-    it('should respond with the index.html file', async () => {
-        const response = await request(server).get('/');
-        expect(response.statusCode).toBe(200);
-        expect(response.headers['content-type']).toBe('text/html; charset=UTF-8');
-    });
+  beforeAll(() => {
+    server = app.listen(4000); 
+  });
+
+  afterAll(() => {
+    server.close();  
+  });
+  it('should return 200 for the home route', async () => {
+    const res = await request(server).get('/');
+    expect(res.statusCode).toEqual(200);
+    expect(res.text).toContain('Nada Travel Planner');  
+  }, 10000);
+  
 });

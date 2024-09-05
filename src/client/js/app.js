@@ -1,6 +1,6 @@
 const getCoordinatesForLocation = async (destination) => {
   const response = await fetch(
-    `http://api.geonames.org/searchJSON?q=${destination}&maxRows=10&username=nadaobaid`
+    `http://api.geonames.org/searchJSON?q=${destination}&maxRows=10&username=${process.env.GEONAMES}`
   );
   if (!response.ok) {
     throw new Error(`GeoNames API error: ${response.status}`);
@@ -17,7 +17,7 @@ const getCoordinatesForLocation = async (destination) => {
 const getWeatherForecast = async (latitude, longitude) => {
   try {
     const response = await fetch(
-      `https://api.weatherbit.io/v2.0/forecast/daily?lat=${latitude}&lon=${longitude}&key=9de10751753948a4aab3fd9d460d8d9a`
+      `https://api.weatherbit.io/v2.0/forecast/daily?lat=${latitude}&lon=${longitude}&key=${process.env.WEATHERBIT_API_KEY}`
     );
     if (!response.ok) {
       throw new Error(`Weather API error: ${response.status}`);
@@ -33,7 +33,7 @@ const getWeatherForecast = async (latitude, longitude) => {
 const getImageForLocation = async (destination) => {
   try {
     const response = await fetch(
-      `https://pixabay.com/api/?key=45728354-72bcbce601750fc20e98c30c9&q=${encodeURIComponent(
+      `https://pixabay.com/api/?key=${process.env.PIXABAY_API_KEY}&q=${encodeURIComponent(
         destination
       )}&image_type=photo`
     );

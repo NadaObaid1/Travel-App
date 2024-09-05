@@ -4,8 +4,36 @@ footer {
     text-align: center;
     padding: 25px;
     margin-top: 120px;
+}
 
-    p {
-        margin: 0;
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    footer {
+        padding: 20px;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    footer {
+        padding: 15px;
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 10px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        padding: 5px;
+        margin-top: 40px;
     }
 }

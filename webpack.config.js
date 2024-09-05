@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: './src/client/index.js',
@@ -12,7 +13,7 @@ module.exports = {
   devServer: {
     static: path.join(__dirname, 'dist'),
     port: 8080,
-  },
+  },  
   module: {
     rules: [
       {
@@ -37,5 +38,6 @@ module.exports = {
       filename: 'index.html',
     }),
     new CleanWebpackPlugin(),
+    new Dotenv() 
   ],
 };
