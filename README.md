@@ -49,7 +49,7 @@ git clone https://github.com/NadaObaid1/Travel-App
 2. Install dependencies:
 npm install
 Set Up Environment Variables Create a .env file in the root of your project directory with the following content:
-  # PIXABAY_API_KEY=your_pixabay_key
-  # WEATHERBIT_API_KEY=your_weatherbit_key
-  # GEONAMES=your-Geaonnames-username
+  * PIXABAY_API_KEY=your_pixabay_key
+  * WEATHERBIT_API_KEY=your_weatherbit_key
+  * GEONAMES=your-Geaonnames-username
 
