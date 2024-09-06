@@ -15,12 +15,13 @@
   margin: 10px 0 5px;
   font-size: 1em;
 }
-
 #app input {
   width: 100%;
   padding: 8px;
   margin-bottom: 20px;
-  box-sizing: border-box;
+  box-sizing: border-box; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
 }
 
 #app #button {
@@ -78,6 +79,28 @@
 
   #app #button {
     padding: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #app {
+    max-width: 800px; 
+  }
+
+  #app h1 {
+    font-size: 2em;
+  }
+
+  #app label {
+    font-size: 1.2em;
+  }
+
+  #app input {
+    padding: 12px;
+  }
+
+  #app #button {
+    padding: 16px;
   }
 }
 
